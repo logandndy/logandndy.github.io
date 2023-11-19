@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100vw;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.inputs {
+  text-align: left;
+}
+.links ul {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li {
+  padding-left: 35px;
+  padding-right: 25px;
+}
+.profil img {
+  height: 50px;
+  width: 50px;
+}
+
+.titre {
+  text-align: center;
+  margin-top: 20px;
+}
+.titre h1 {
+  font-size: 4em;
+  text-shadow: -4px -5px 20px;
+}
+.proposition {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "topl topr"
+    "midl midr"
+    "botl botr";
+  font-size: 20px;
+  align-items: center;
+  justify-items: center;
+}
+.proposition a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.proposition a:hover {
+  background-color: rgb(57, 52, 52);
+  transition: 0.5s;
+}
+.vehicule {
+  margin-top: 80px;
+  text-align: center;
+  margin-left: 50px;
+}
+.vehicule p {
+  margin-bottom: 30px;
+}
+.service {
+  margin-right: 50px;
+  text-align: center;
+  grid-column: midr;
+  grid-row: midr;
+}
+.service ul li {
+  list-style: none;
+}
+.formAvis {
+  border-top: 2px solid black;
+}
+.formAvis,
+.formAvis form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.formAvis form label,
+.formAvis h2,
+.formAvis form select,
+.formAvis form button {
+  margin-top: 25px;
+}
+
+footer {
+  background-color: black;
+  color: #ffffff;
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+footer div {
+  font-size: 1.2em;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.Horaires {
+  margin-left: 45px;
+}
+.contact p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.contact ul {
+  font-size: 0.7em;
+}
+.contact ul li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+/* style page boutique */
+.neuf para img {
+  size: 50%;
+}
+.neufoccas {
+  display: flex;
+  font-size: 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.neuf {
+  float: left;
+  width: 50%;
+}
+.neuf div,
+.occas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.neuf img,
+.occas img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px;
+}
+.neuf li,
+.occas li {
+  list-style: none;
+}
+.neuf div img:hover,
+.occas div img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.para {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.para a {
+  border-radius: 50%;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: white;
+}
+/* Styles pour la div de description */
+
+.description {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* style page service */
+.titreService {
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+.servPlan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5em;
+  margin-top: 140px;
+}
+.mesServices p {
+  margin-top: 30px;
+}
+/* style page contact */
+.contactezNous {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  padding-top: 20px;
+}
+.formulaire {
+  display: flex;
+  height: 500px;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+.formulaire div {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.formulaire input {
+  padding: 5px;
+  border-radius: 25%;
+  border-bottom: 5px solid black;
+}
+.formulaire input:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: #c5fac5;
+}
+/* style page connexion */
+.mainConnexion {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #cccccc;
+}
+.divConnexion {
+  position: relative;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.divConnexion:hover {
+  background-color: #737373;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.divConnexion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100px;
+  background-image: url("/photo/profil.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.titreConnexion {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 80px;
+}
+.formConnexion form {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+.formConnexion input {
+  margin-bottom: 35px;
+}
+.formConnexion button:hover,
+.formConnexion input:hover {
+  background-color: lightgreen;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+/* Style pour la fenêtre modale */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Contenu de la fenêtre modale */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+/* Bouton de fermeture */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.peugeot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "topl topr"
+    "midl midr"
+    "botl botr";
+}
